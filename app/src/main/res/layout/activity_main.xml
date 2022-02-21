@@ -6,37 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv"
+
+    <TimePicker
+        android:id="@+id/tp_timepicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="사랑해"
-        android:textColor="#E87878"
-        android:textSize="34sp"
+        android:timePickerMode="spinner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_sub"
-        android:layout_width="115dp"
-        android:layout_height="85dp"
-        android:text="이건 보이냐?"
-        android:textColor="#BEF376"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="85dp"
-        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="regist"
+        android:text="등록"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_timepicker" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="funTest"
+        android:layout_marginTop="28dp"
+        android:onClick="unregist"
+        android:text="해지"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/tp_timepicker" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
