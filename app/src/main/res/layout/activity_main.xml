@@ -50,8 +50,10 @@
         android:text="과학적 수면시간"
         app:layout_constraintBottom_toTopOf="@+id/tp_timepicker"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 
     <EditText
         android:id="@+id/tv_sendMsg"
@@ -78,6 +80,17 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_sub"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sleeping" />
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="자는 시간 알려줘"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
