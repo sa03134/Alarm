@@ -1,7 +1,6 @@
 package com.example.myapplication
 
 
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -21,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
 
-        binding.btnSub.setOnClickListener{
-            val intent = Intent(this,SubActivity::class.java)
-            intent.putExtra("msg",binding.tvSendMsg.text.toString())
+        binding.btnSub.setOnClickListener {
+            val intent = Intent(this, SubActivity::class.java)
+            intent.putExtra("msg", binding.tvSendMsg.text.toString())
             startActivity(intent)
         }
 
@@ -31,10 +30,17 @@ class MainActivity : AppCompatActivity() {
         val formatter = DateTimeFormatter.ISO_LOCAL_TIME
         val formatted = current.format(formatter)
 
+        var state = true
 
+        binding.btnMoon.setOnClickListener {
+            state = !state
+            if (state){
+            binding.btnMoon.setBackgroundResource(R.drawable.sleepingcolor)
 
-        binding.btnToast.setOnClickListener {
-            binding.ivProfile.setImageResource(R.drawable.sleepingcolor)
+            }
+            else {
+                binding.btnMoon.setBackgroundResource(R.drawable.sleeping)
+            }
             Toast.makeText(this, formatted, Toast.LENGTH_SHORT).show()
         }
 

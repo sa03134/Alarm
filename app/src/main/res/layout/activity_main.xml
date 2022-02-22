@@ -68,24 +68,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iv_profile"
-        android:layout_width="99dp"
+    <Button
+        android:id="@+id/btn_moon"
+        android:layout_width="58dp"
         android:layout_height="58dp"
-
         android:layout_marginBottom="24dp"
+        android:background="@drawable/sleeping"
         app:layout_constraintBottom_toTopOf="@+id/tp_timepicker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_sub"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/sleeping" />
+        app:strokeColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/teal_200"
         android:text="자는 시간 알려줘"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
