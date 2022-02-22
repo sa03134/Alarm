@@ -60,8 +60,24 @@
         android:ems="10"
         android:hint="입력하세요"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="30dp" />
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="99dp"
+        android:layout_height="58dp"
+
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tp_timepicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sleeping" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

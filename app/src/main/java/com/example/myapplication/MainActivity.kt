@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        Toast.makeText(this, binding.tvSendMsg.text, Toast.LENGTH_SHORT).show( )
+//        Toast.makeText(this, binding.tvSendMsg.text, Toast.LENGTH_SHORT).show( )
 
         binding.btnSub.setOnClickListener{
             val intent = Intent(this,SubActivity::class.java)
