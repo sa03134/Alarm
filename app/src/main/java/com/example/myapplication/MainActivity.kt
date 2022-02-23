@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val formatter = DateTimeFormatter.ISO_LOCAL_TIME
         val formatted = current.format(formatter)
 
-        var state = true
+        var state = false
 
         binding.btnMoon.setOnClickListener {
             state = !state
@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
                 binding.btnMoon.setBackgroundResource(R.drawable.sleeping)
             }
             Toast.makeText(this, formatted, Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btnList.setOnClickListener {
+            val intent = Intent(this,ListActivity :: class.java)
+            intent.putExtra("test","hello~~")
+            startActivity(intent)
         }
 
 
