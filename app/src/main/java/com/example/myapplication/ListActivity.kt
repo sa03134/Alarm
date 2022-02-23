@@ -43,9 +43,6 @@ class ListActivity : AppCompatActivity() {
             AdapterView.OnItemClickListener { parent, view, position, id ->
                 val selectItem = parent.getItemAtPosition(position) as User
 
-//                println(selectItem.alarm)
-//                selectItem.alarm.setImageResource(R.drawable.sleepingcolor)
-
                 Toast.makeText(this, selectItem.time, Toast.LENGTH_SHORT).show()
 
             }
