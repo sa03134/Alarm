@@ -50,6 +50,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnReg.setOnClickListener {
+            val intent = Intent(this,NaviActivity :: class.java)
+            intent.putExtra("test","hello~~")
+            startActivity(intent)
+        }
+
 
     }
 }
