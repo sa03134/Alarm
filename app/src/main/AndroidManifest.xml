@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".SharedActivity"
+            android:exported="false" />
+        <activity
             android:name=".NaviActivity"
             android:exported="false" />
         <activity

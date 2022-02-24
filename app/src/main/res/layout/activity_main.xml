@@ -82,7 +82,7 @@
         app:strokeColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/btn_toast"
+        android:id="@+id/btn_sleep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="자는 시간 알려줘"

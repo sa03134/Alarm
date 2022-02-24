@@ -56,6 +56,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnSleep.setOnClickListener {
+            val intent = Intent(this,SharedActivity :: class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
